@@ -2,11 +2,9 @@ from django.shortcuts import render
 
 
 # Define the home view
-def home(request):
-    return render(request, 'home.html')
 
 def challenges(request):
-    return render(request, 'challenges.html')
+    return render(request, 'challenges.html', {'challenges': challenges})
 
 def profile(request):
     return render(request, 'profile.html')
