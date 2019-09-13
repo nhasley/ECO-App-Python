@@ -25,10 +25,14 @@
     {% endblock %}
   </main>
   <footer class="page-footer">
-    <!-- <div class="center">by Code Blooded Killers</div> -->
+    {% if user.is_authenticated %}
     <ul class="center">
         <li><a href="{%url 'challenges'%}">Challenges</a></li>
         <li><a href="{%url 'profile'%}">Profile</a></li>
+        <li><a href="{% url 'logout' %}">Log Out</a></li>
+  {% else %}
+    <li><a href="{% url 'login' %}">Log In</a></li>
+  {% endif %}
     </ul>
   </footer>
 </body>
