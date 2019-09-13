@@ -17,9 +17,6 @@
         <ul>
           <li><a href="/" class="left brand-logo">&nbsp;&nbsp;ECO</a></li>
         </ul>
-        <ul class="right">
-          <li><a href="/about">About</a></li>
-        </ul>
       </div>
     </nav>
   </header>
@@ -27,8 +24,12 @@
     {% block content %}
     {% endblock %}
   </main>
-  <footer class="footer">
-    <div class="center">by Code Blooded Killers</div>
+  <footer class="page-footer">
+    <!-- <div class="center">by Code Blooded Killers</div> -->
+    <ul class="center">
+        <li><a href="{%url 'challenges'%}">Challenges</a></li>
+        <li><a href="{%url 'profile'%}">Profile</a></li>
+    </ul>
   </footer>
 </body>
 </html>
