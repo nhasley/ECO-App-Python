@@ -29,9 +29,9 @@
   <footer class="page-footer">
     {% if user.is_authenticated %}
     <ul class="center">
-        <li><a href="{%url 'challenges'%}"><i class="fas fa-camera-retro" style="font-size:25px;"></i> Challenges</a></li>
-        <li><a href="{%url 'profile'%}"><i class="glyphicon glyphicon-user" style="font-size:25px;"></i> Profile</a></li>
-        <li><a href="{% url 'logout' %}">Log Out</a></li>
+        <li><a href="{%url 'challenges'%}" id="text"><i class="fas fa-camera-retro" style="font-size:25px; color: white;"></i> Challenges</a></li>
+        <li><a href="{%url 'profile'%}" id="text"><i class="glyphicon glyphicon-user" style="font-size:25px; color: white;"></i> Profile</a></li>
+        <li><a href="{% url 'logout' %}" id="text">Log Out</a></li>
   {% else %}
     <li><a href="{% url 'login' %}">Log In</a></li>
   {% endif %}

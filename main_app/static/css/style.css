@@ -5,6 +5,10 @@ body {
   font: Helvetica, 'sans serif';
   }
 
+#text {
+  color: white;
+}
+
 ul.center {
   display: flex;
   flex-direction: row;
@@ -26,10 +30,7 @@ footer.page-footer {
     padding-top: 0;
     background-color: green;
   }
-
-a {
-  color: white;
-}  
+  
 
 div.center {
     color: white;
