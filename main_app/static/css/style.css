@@ -1,9 +1,16 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font: Helvetica, 'sans serif';
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font: Helvetica, 'sans serif';
   }
+
+ul.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
 
 nav {
     background: green;
@@ -19,6 +26,10 @@ footer.page-footer {
     padding-top: 0;
     background-color: green;
   }
+
+a {
+  color: white;
+}  
 
 div.center {
     color: white;
