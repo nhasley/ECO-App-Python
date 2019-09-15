@@ -5,8 +5,18 @@ body {
   font: Helvetica, 'sans serif';
   }
 
+h1, div.card-content {
+  margin: 20px;
+}
+
+#head {
+  font-size: 25px;
+}
+
 #text {
   color: white;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .card .card-title {
