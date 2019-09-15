@@ -33,7 +33,7 @@
         <li><a href="{%url 'profile'%}" id="text"><i class="glyphicon glyphicon-user" style="font-size:25px; color: white;"></i> Profile</a></li>
         <li><a href="{% url 'logout' %}" id="text">Log Out</a></li>
   {% else %}
-    <li><a href="{% url 'login' %}">Log In</a></li>
+    <a href="{% url 'login' %}" id="text">Log In</a>
   {% endif %}
     </ul>
   </footer>
