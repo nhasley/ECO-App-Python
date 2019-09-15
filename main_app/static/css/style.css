@@ -2,7 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font: Helvetica, 'sans serif';
+  font-family: 'Comfortaa', cursive;
   }
 
 h1, div.card-content {
@@ -10,11 +10,12 @@ h1, div.card-content {
 }
 
 #head {
+  color: black;
   font-size: 25px;
 }
 
 #text {
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: 800;
 }
@@ -25,11 +26,11 @@ h1, div.card-content {
 
 div.card-content:hover {
   font-weight: 900;
-  color: black;
+  color: green;
 }
 
 div.card-content {
-  color: green;
+  color: black;
   font-weight: 500;
 }
 
