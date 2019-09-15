@@ -9,6 +9,10 @@
 <div>Current Points:</div>
 <hr />
 <div>Recent Posts</div>
-<div class="img"></div>
+{% for photo in challenge.photo_set.all %}
+    <img class="responsive-img card-panel" src="{{photo.url}}">
+{% empty %}
+    <div class="card-panel teal-text center-align">No Photos Uploaded</div>
+{% endfor %}
 
 {% endblock %}

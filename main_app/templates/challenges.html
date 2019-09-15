@@ -4,6 +4,7 @@
 <h1>Challenges</h1>
 
 {% for challenge in challenges %}
+<a href="{% url 'upload' challenge.id %}">
   <div class="card">
     <div class="card-content">
       <span class="card-title">{{ challenge.name }}</span>
@@ -11,6 +12,7 @@
       <p>Description: {{ challenge.description }}</p>
     </div>
   </div>
+</a>
 {% endfor %}
 
 {% endblock %}
