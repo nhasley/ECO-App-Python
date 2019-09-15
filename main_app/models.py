@@ -1,15 +1,19 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class Challenge(models.Model):
-    name = models.CharField(max_length=100)
-    points = models.IntegerField()
-    description = models.CharField(max_length=250)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+CHALLENGES = (
+    ('M', 'Metro'),
+    ('B', 'Bike'),
+    ('W', 'Walk')
+)
 
-class Photo(models.Model):
-    url = models.CharField(max_length=200)
-    challenge = models.ForeignKey(Challenge, on_delete=models.CASCADE)
+class Post(models.Model):
+    description = models.CharField(max_length=100) 
+    challenge = models.CharField(
+        max_length=10,
+        choices=CHALLENGES,
+        default=CHALLENGES[0][0]
+    )
 
     def __str__(self):
-        return f"Photo for challenge_id: {self.chalenge_id} @{self.url}"
+        return self.name
