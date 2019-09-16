@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Post 
+# from .forms import PostForm
 import uuid
 import boto3
 
@@ -17,7 +18,8 @@ def profile(request):
 
 def posts_detail(request, post_id):
     post = Post.objects.get(id=post_id)
-    return render(request, 'posts/detail.html', {'post':post})
+    # post_form = PostForm()
+    return render(request, 'posts/detail.html', {'post':post}) #, 'post_form': post_form}
 
 class PostCreate(CreateView):
     model = Post
