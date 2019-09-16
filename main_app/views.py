@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Post 
-# from .forms import PostForm
+from .models import Post, Photo
 import uuid
 import boto3
 
