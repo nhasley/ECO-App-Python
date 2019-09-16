@@ -31,6 +31,7 @@
     {% if user.is_authenticated %}
     <ul class="center">
         <li><a href="{%url 'posts'%}" id="text"><i class="fas fa-camera-retro" style="font-size:25px; color: white;"></i> Posts</a></li>
+        <li><a href="{% url 'posts_create' %}">ADD</a></li>
         <li><a href="{%url 'profile'%}" id="text"><i class="glyphicon glyphicon-user" style="font-size:25px; color: white;"></i> Profile</a></li>
         <li><a href="{% url 'logout' %}" id="text">Log Out</a></li>
   {% else %}

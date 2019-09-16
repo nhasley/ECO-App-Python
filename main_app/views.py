@@ -11,5 +11,15 @@ BUCKET = 'codebloodedkillers'
 def posts_index(request):
     posts = Post.objects.all()
     return render(request, 'posts.html', {'posts': posts})
+
 def profile(request):
     return render(request, 'profile.html')
+
+def posts_detail(request, post_id):
+    post = Post.objects.get(id=post_id)
+    return render(request, 'posts/detail.html', {'post':post})
+
+class PostCreate(CreateView):
+    model = Post
+    fields = '__all__'
+    success_url = '/profile/'
