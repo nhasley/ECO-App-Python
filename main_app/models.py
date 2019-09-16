@@ -10,6 +10,7 @@ CHALLENGES = (
 class Post(models.Model):
     challenge = models.CharField(
         max_length=10,
-        choices=CHALLENGES
+        choices=CHALLENGES,
+        default='Metro'
     )
     description = models.CharField(max_length=100)
