@@ -3,10 +3,20 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-family: 'Comfortaa', cursive;
-  }
+}
 
-h1, div.card-content {
+div.card {
+justify-items: center;
+}
+
+h1 {
   margin: 20px;
+}
+
+div.orig {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
 }
 
 #head {

@@ -5,9 +5,9 @@
 
 {% for post in posts %}
 <a href="{% url 'detail' post.id %}">
-  <div class="card" style="display: flex; justify-content: center; min-height: 30vmin; max-height: 60vmax; min-width: 30vmin; max-width: 60vmax;">
+  <div class="card" style="display: flex; justify-content: center; height: 100%; width: 100%;">
     <div class="card-content">
-        <img class="posts" src="{{post.photo}}" style="height: 100%; width: 100%; object-fit: cover; min-height: 10vmin; max-height: 50vmax; min-width: 10vmin; max-width: 50vmax;">
+        <img class="posts" src="{{post.photo}}" style="height: 100%; width: 100%; object-fit: cover;">
         <!-- <span class="card-title">{{ post.challenge }}</span> -->
       <!-- <p>Challenge: {{ post.challenge }}</p> -->
       <p id="text" style="padding-top: 5px; font-size: 100%;">{{ post.description }}</p>

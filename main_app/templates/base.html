@@ -22,7 +22,7 @@
       <div class="nav-wrapper">
         <ul>
           <li><a href="/" class="left brand-logo" id="head">&nbsp;&nbsp;<i class="fas fa-leaf"
-                style="color:#91C01D;"></i>ECO</a></li>
+              style="color:#91C01D;"></i>ECO</a></li>
         </ul>
       </div>
     </nav>
@@ -42,12 +42,14 @@
       <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user"
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Profile</a></li>
       {% else %}
-      <a href="{% url 'signup' %}" id="textb"
-        style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Sign
-        Up</a>
-      <a href="{% url 'login' %}" id="textb"
-        style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Log
-        In</a>
+      <div class="orig">
+        <a href="{% url 'signup' %}" id="textb"
+          style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Sign
+          Up</a>
+        <a href="{% url 'login' %}" id="textb"
+          style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Log
+          In</a>
+      </div>
       {% endif %}
     </ul>
   </footer>
