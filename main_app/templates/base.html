@@ -31,7 +31,8 @@
     {% block content %}
     {% endblock %}
   </main>
-  <footer class="page-footer" style="position: fixed; left: 0; bottom: 0; height: 100px; width: 100%;">
+  <footer class="page-footer"
+    style="position: fixed; left: 0; bottom: 0; height: 100px; width: 100%; padding-top: 30px; padding-left: 40px;">
     {% if user.is_authenticated %}
     <ul class="center">
       <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro"
@@ -41,7 +42,12 @@
       <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user"
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Profile</a></li>
       {% else %}
-      <a href="{% url 'login' %}" id="textb">Log In</a>
+      <a href="{% url 'signup' %}" id="textb"
+        style=" padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Sign
+        Up</a>
+      <a href="{% url 'login' %}" id="textb"
+        style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Log
+        In</a>
       {% endif %}
     </ul>
   </footer>
