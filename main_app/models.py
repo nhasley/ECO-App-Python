@@ -14,3 +14,6 @@ class Post(models.Model):
         default='Metro'
     )
     description = models.CharField(max_length=100)
+    points = models.IntegerField(
+        default=10
+    )

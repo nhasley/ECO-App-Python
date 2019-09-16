@@ -6,6 +6,7 @@
     <!-- <span class="card-title">{{ post.name }}</span> -->
     <p>Challenge: {{ post.challenge }}</p>
     <p>Description: {{ post.description }}</p>
+    <p>Points: {{ post.points }}</p>
     <div class="card-action">
       <a href="{% url 'posts_update' post.id %}">Edit</a>
       <a href="{% url 'posts_delete' post.id %}">Delete</a>
