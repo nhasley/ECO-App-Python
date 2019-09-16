@@ -8,7 +8,7 @@ CHALLENGES = (
 )
 
 class Post(models.Model):
-    photo = models.CharField(max_length=500)
+    photo = models.CharField(max_length=1000)
     challenge = models.CharField(
         max_length=10,
         choices=CHALLENGES,
