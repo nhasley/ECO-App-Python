@@ -14,7 +14,10 @@ class Post(models.Model):
         default='Metro'
     )
     description = models.CharField(max_length=100)
-
+    points = models.IntegerField(
+        default=10
+    )
+    
 class Photo(models.Model):
     url = models.CharField(max_length=200)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)

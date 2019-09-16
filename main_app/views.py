@@ -22,7 +22,7 @@ def posts_detail(request, post_id):
 
 class PostCreate(CreateView):
     model = Post
-    fields = '__all__'
+    fields = ['challenge', 'description']
     success_url = '/'
 
 class PostUpdate(UpdateView):
