@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +15,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://kit.fontawesome.com/95f3aa8ce1.js"></script>
 </head>
+
 <body>
   <header class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
         <ul>
-          <li><a href="/" class="left brand-logo" id="head">&nbsp;&nbsp;<i class="fas fa-leaf" style="color:#91C01D;"></i>ECO</a></li>
+          <li><a href="/" class="left brand-logo" id="head">&nbsp;&nbsp;<i class="fas fa-leaf"
+                style="color:#91C01D;"></i>ECO</a></li>
         </ul>
       </div>
     </nav>
@@ -31,15 +34,19 @@
   <footer class="page-footer">
     {% if user.is_authenticated %}
     <ul class="center">
-        <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro" style="font-size:25px; color: white;"></i> Posts</a></li>
-        <li><a href="{% url 'posts_create' %}" id="textb"><i class="fas fa-plus-circle" style="font-size: 25px; color: white;"></i>ADD</a></li>
-        <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user" style="font-size:25px; color: white;"></i> Profile</a></li>
-        <li><a href="{% url 'logout' %}" id="textb">Log Out</a></li>
-  {% else %}
-    <a href="{% url 'login' %}" id="textb">Log In</a>
-  {% endif %}
+      <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro" style="font-size:25px; color: white;"></i>
+          Posts</a></li>
+      <li><a href="{% url 'posts_create' %}" id="textb"><i class="fas fa-plus-circle"
+            style="font-size: 25px; color: white;"></i>ADD</a></li>
+      <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user"
+            style="font-size:25px; color: white;"></i> Profile</a></li>
+      <li><a href="{% url 'logout' %}" id="textb">Log Out</a></li>
+      {% else %}
+      <a href="{% url 'signup' %}">Sign Up</a>
+      <a href="{% url 'login' %}" id="textb">Log In</a>
+      {% endif %}
     </ul>
   </footer>
 </body>
-</html>
 
+</html>

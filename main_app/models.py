@@ -18,3 +18,4 @@ class Post(models.Model):
     points = models.IntegerField(
         default=10
     )
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
