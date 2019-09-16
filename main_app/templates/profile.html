@@ -15,4 +15,7 @@
     <div id="textp" class="card-panel teal-text center-align">No Photos Uploaded</div>
 {% endfor %}
 
+<form action="{% url 'logout' %}" id="textb">
+    <button type='submit'>Log Out</button>
+</form>
 {% endblock %}
