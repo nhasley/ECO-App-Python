@@ -14,7 +14,7 @@ h1, div.card-content {
   font-size: 25px;
 }
 
-#text {
+#text, #textp, #textb {
   color: black;
   font-size: 20px;
   font-weight: 800;
@@ -24,9 +24,25 @@ h1, div.card-content {
   font-weight: 900;
 }
 
-div.card-content:hover {
+#texto {
+  font-weight: 800;
+  font-size: 17px;
+  color: green;
+}
+
+#texto:hover {
+  font-weight: 900;
+  color: black;
+}
+
+#text:hover {
   font-weight: 900;
   color: green;
+}
+
+#textb:hover {
+  font-weight: 900;
+  text-decoration: underline white;
 }
 
 div.card-content {
