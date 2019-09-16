@@ -7,7 +7,7 @@
 <a href="{% url 'detail' post.id %}">
   <div class="card">
     <div class="card-content">
-      <img class="posts" src="{{post.photo}}">
+      <img class="posts" src="{{post.photo}}" style="max-height: 50vmax; max-width: 50vmax;">
       <!-- <span class="card-title">{{ post.challenge }}</span> -->
       <!-- <p>Challenge: {{ post.challenge }}</p> -->
       <p id="text">{{ post.description }}</p>
