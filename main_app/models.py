@@ -1,11 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-CHALLENGES = [
+CHALLENGES = (
     ('Metro', 'Metro'),
     ('Bike', 'Bike'),
     ('Walk', 'Walk')
-]
+)
 
 class Post(models.Model):
     challenge = models.CharField(
@@ -13,4 +13,3 @@ class Post(models.Model):
         choices=CHALLENGES
     )
     description = models.CharField(max_length=100)
-    

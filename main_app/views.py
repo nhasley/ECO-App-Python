@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Post 
 import uuid
 import boto3
@@ -22,4 +22,13 @@ def posts_detail(request, post_id):
 class PostCreate(CreateView):
     model = Post
     fields = '__all__'
-    success_url = '/profile/'
+    success_url = '/'
+
+class PostUpdate(UpdateView):
+    model = Post
+    fields = '__all__'
+    success_url = '/'
+
+class PostDelete(DeleteView):
+  model = Post
+  success_url = '/'
