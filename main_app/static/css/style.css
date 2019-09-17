@@ -164,7 +164,7 @@ div.center {
   color: green;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   
   a#textb{
     display: none;
@@ -194,7 +194,7 @@ div.center {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   img.posts{
     height: 100%; 
     object-fit: cover; 
