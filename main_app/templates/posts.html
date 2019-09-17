@@ -4,15 +4,12 @@
 <h1>Posts</h1>
 
 {% for post in posts %}
-<a href="{% url 'detail' post.id %}">
-  <div class="card" style="display: flex; justify-content: center; height: 100%; width: 100%;">
+<a href="{% url 'detail' post.id %}" class="post-box">
     <div class="card-content">
-        <img class="posts" src="{{post.photo}}" style="height: 100%; width: 100%; object-fit: cover;">
-        <!-- <span class="card-title">{{ post.challenge }}</span> -->
-      <!-- <p>Challenge: {{ post.challenge }}</p> -->
-      <p id="text" style="padding-top: 5px; font-size: 100%;">{{ post.description }}</p>
+        <img class="posts" src="{{post.photo}}">
+      <p id="text">{{ post.description }}</p>
     </div>
-  </div>
+    <hr />
 </a>
 {% endfor %}
 

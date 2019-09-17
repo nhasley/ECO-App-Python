@@ -21,18 +21,30 @@
     <nav>
       <div class="nav-wrapper">
         <ul>
-          <li><a href="/" class="left brand-logo" id="head">&nbsp;&nbsp;<i class="fas fa-leaf"
-              style="display: flex; align-items: center; color:#91C01D; margin-left: 10px; margin-right: 0;"></i>ECO</a></li>
+          <li><a href="/" class="left brand-logo" id="head">&nbsp;&nbsp;<i class="fas fa-leaf"></i>ECO</a></li>
         </ul>
+        <div class="top-menu">
+          {% if user.is_authenticated %}
+            <ul class="right">
+              <li><a href="{%url 'posts'%}" id="texta">Posts</a></li>
+              <li><a href="{% url 'posts_create' %}" id="texta">Add</a></li>
+              <li><a href="{%url 'profile'%}" id="texta">Profile</a></li>
+              {% else %}
+              <div class="orig1 right">
+                <a href="{% url 'signup' %}" id="textc">Sign Up</a>
+                <a href="{% url 'login' %}" id="textc">Log In</a>
+              </div>
+              {% endif %}
+        </div>
       </div>
     </nav>
   </header>
-  <main class="container" style="padding-bottom: 120px;">
+  <main class="container" style=" margin: 0; ">
     {% block content %}
     {% endblock %}
   </main>
   <footer class="page-footer"
-    style="position: fixed; left: 0; bottom: 0; height: 100px; width: 100%;">
+    >
     {% if user.is_authenticated %}
     <ul class="center">
       <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro"
@@ -43,12 +55,8 @@
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Profile</a></li>
       {% else %}
       <div class="orig">
-        <a href="{% url 'signup' %}" id="textb"
-          style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Sign
-          Up</a>
-        <a href="{% url 'login' %}" id="textb"
-          style="padding: 10px; border-radius: 10px; background-color: white; color: green; box-shadow: 5px 5px 5px darkgreen;">Log
-          In</a>
+        <a href="{% url 'signup' %}" id="textd">Sign Up</a>
+        <a href="{% url 'login' %}" id="textd">Log In</a>
       </div>
       {% endif %}
     </ul>
