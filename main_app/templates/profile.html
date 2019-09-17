@@ -2,11 +2,10 @@
 {% block content %}
 
 <h1>My Profile</h1>
-<div id="textp">Name:</div>
-<div id="textp">Email:</div>
-<div id="textp">City:</div>
-<hr />
+
 <div id="textp">Current Points:</div>
+<hr />
+<button type='submit'>Redeem Points</button>
 <hr />
 <div id="textp">Recent Posts</div>
 {% for photo in post.photo_set.all %}

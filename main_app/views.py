@@ -17,6 +17,9 @@ def posts_index(request):
 def profile(request):
     return render(request, 'profile.html')
 
+def challenges(request):
+    return render(request, 'challenges.html')
+
 def posts_detail(request, post_id):
     post = Post.objects.get(id=post_id)
     photo_file = request.FILES.get('photo-file', None)

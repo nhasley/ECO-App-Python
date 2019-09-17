@@ -20,7 +20,6 @@ h1 {
   margin: 20px;
 }
 button{
-  margin-top: 30px;
   background: green; 
   border-radius: 10px; 
   color: white;
@@ -39,6 +38,9 @@ div.orig1 {
   align-content: center;
   justify-content: right;
   padding-left: 5px;
+}
+#logout{
+  margin-top: 30px;
 }
 
 #head {

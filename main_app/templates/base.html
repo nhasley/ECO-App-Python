@@ -27,6 +27,7 @@
           {% if user.is_authenticated %}
             <ul class="right">
               <li><a href="{%url 'posts'%}" id="texta">Posts</a></li>
+              <li><a href="{%url 'challenges'%}" id="texta">Prizes</a></li>
               <li><a href="{% url 'posts_create' %}" id="texta">Add</a></li>
               <li><a href="{%url 'profile'%}" id="texta">Profile</a></li>
               {% else %}
@@ -49,6 +50,8 @@
     <ul class="center">
       <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro"
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Posts</a></li>
+      <li><a href="{%url 'challenges'%}" id="textb"><i class="fas fa-camera-retro"
+            style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Prizes</a></li>
       <li><a href="{% url 'posts_create' %}" id="textb"><i class="fas fa-plus-circle"
             style="font-size: 40px; color: white; display: flex; justify-content: center;"></i>Add</a></li>
       <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user"
