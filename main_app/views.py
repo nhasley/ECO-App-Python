@@ -15,7 +15,8 @@ def posts_index(request):
     return render(request, 'posts.html', {'posts': posts})
 
 def profile(request):
-    return render(request, 'profile.html')
+    posts = Post.objects.all()
+    return render(request, 'profile.html', {'posts': posts})
 
 def challenges(request):
     return render(request, 'challenges.html')

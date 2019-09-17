@@ -8,11 +8,20 @@
 <button type='submit'>Redeem Points</button>
 <hr />
 <div id="textp">Recent Posts</div>
-{% for photo in post.photo_set.all %}
-    <img class="responsive-img card-panel" src="{{photo.url}}">
-{% empty %}
-    <div id="textp" class="card-panel teal-text center-align">No Photos Uploaded</div>
+
+{% if posts|length == 0 %}
+<div id="textp" class="card-panel center-align">No Photos Uploaded</div>
+{% else %}
+{% for post in posts %}
+<a href="{% url 'detail' post.id %}" class="post-box">
+    <div class="card-content">
+        <img class="posts" src="{{post.photo}}">
+      <p id="text">{{ post.description }}</p>
+    </div>
+    <hr />
+</a>
 {% endfor %}
+{% endif %}
 
 <form action="{% url 'logout' %}" id="logout">
     <button type='submit'>Log Out</button>

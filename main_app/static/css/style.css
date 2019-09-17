@@ -2,7 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', sans-serif;
 }
 input.btn{
   margin-top: 20px;
@@ -130,6 +130,11 @@ footer.page-footer {
 
 div.center {
     color: white;
+}
+
+
+.dropdown-content li>span{
+  color: green;
 }
 
 @media screen and (min-width: 481px) {
