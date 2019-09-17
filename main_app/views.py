@@ -5,7 +5,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Post
 import uuid
 import boto3
-
+#comment
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
 BUCKET = 'codebloodedkillers'
 
