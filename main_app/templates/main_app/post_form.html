@@ -6,12 +6,12 @@
   {% else %}
     <h1>Add Post</h1>
   {% endif %}
-  <form action="" method="post">
+  <form action="" method="post" class="edit-add">
     {% csrf_token %}
     <table>
       {{ form.as_table }}
     </table>
-    <input type="submit" value="Submit!" class="btn" style="background: green;">
+    <input type="submit" value="Submit!" class="btn">
   </form>
 
   <script>
