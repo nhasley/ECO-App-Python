@@ -216,7 +216,7 @@ form.edit-add {
     margin: 0 auto;
   }
   img.posts{
-    height: 100%; 
+    /* height: 100%;  */
     object-fit: cover; 
     max-height: 60vmax; 
     max-width: 60vmax;
@@ -238,11 +238,15 @@ form.edit-add {
   h1 {
     margin: 20px 0;
   }
-  img.posts {
+  img.posts{
     display: flex;
     justify-content: center;
     margin: auto;
     border-radius: 10px;
+    /* height: 100%; 
+    object-fit: cover; 
+    max-height: 50vmax; 
+    max-width: 50vmax; */
   }
   div.top-menu{
     display: none;
