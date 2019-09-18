@@ -1,1 +1,1 @@
-web: gunicorn eco.wsgi
+web: gunicorn pointcollector.wsgi
