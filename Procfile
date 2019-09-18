@@ -1,1 +1,1 @@
-web: gunicorn ecopython.wsgi
+web: gunicorn ECO.wsgi
