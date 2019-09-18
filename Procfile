@@ -1,1 +1,1 @@
-web: gunicorn ECO.wsgi
+web: gunicorn eco.wsgi
