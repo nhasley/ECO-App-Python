@@ -40,7 +40,7 @@
       </div>
     </nav>
   </header>
-  <main class="container" style=" margin: 0; ">
+  <main class="container">
     {% block content %}
     {% endblock %}
   </main>
@@ -50,9 +50,9 @@
     <ul class="center">
       <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro"
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Posts</a></li>
-      <li><a href="{%url 'challenges'%}" id="textb"><i class="fas fa-camera-retro"
+      <li><a href="{%url 'challenges'%}" id="textb"><i class="fas fa-trophy"
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Prizes</a></li>
-      <li><a href="{% url 'posts_create' %}" id="textb"><i class="fas fa-plus-circle"
+      <li><a href="{% url 'posts_create' %}" id="textb"><i class="fas fa-plus"
             style="font-size: 40px; color: white; display: flex; justify-content: center;"></i>Add</a></li>
       <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user"
             style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Profile</a></li>

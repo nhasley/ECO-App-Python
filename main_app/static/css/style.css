@@ -2,7 +2,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Comfortaa';
+}
+
+img.posts {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 input.btn, button {
@@ -38,6 +44,7 @@ div.orig {
   justify-content: space-evenly;
   padding-top: 25px;
 }
+
 div.orig1 {
   display: flex;
   justify-content: flex-end;
@@ -45,6 +52,7 @@ div.orig1 {
   justify-content: right;
   padding-left: 5px;
 }
+
 #logout{
   margin-top: 30px;
 }
@@ -53,6 +61,7 @@ div.orig1 {
   color: black;
   font-size: 25px;
 }
+
 a#textd{
   padding: 15px; 
   border-radius: 10px; 
@@ -60,10 +69,23 @@ a#textd{
   color: green; 
   box-shadow: 5px 5px 5px darkgreen;
 }
-#text, #textp, #textb {
+
+#text, #textp, #textb, #textc, label, th, td {
   color: black;
   font-size: 20px;
   font-weight: 800;
+}
+
+#text, #textp, #textb {
+  text-align: center;
+}
+
+#textc {
+  margin: 20px;
+}
+
+div.card-content {
+  justify-content: center;
 }
 
 div.card-content:hover {
@@ -115,17 +137,24 @@ i.fas.fa-leaf::before{
   margin-left: 10px; 
   margin-right: 0;
 }
+
 a#head.left.brand-logo{
   display:flex;
   color: white;
   text-decoration: none;
 }
+
 a#head.left.brand-logo:hover{
   background: none;
 }
+
 div.card-content {
   color: black;
   font-weight: 500;
+}
+
+div.card-action {
+  text-align: center;
 }
 
 p#text{
@@ -141,31 +170,38 @@ ul.center {
 }
 
 nav {
-    background: green;
-    margin: 0 auto;
+  background: green;
+  margin: 0 auto;
 }
   
 main {
-    flex: 1 0 auto;
-  }
+  flex: 1 0 auto;
+}
   
 footer.page-footer {
-    margin-bottom: 0;
-    padding-top: 0;
-    background-color: green;
-  }
-
-div.center {
-    color: white;
+  margin-bottom: 0;
+  padding-top: 0;
+  background-color: green;
 }
 
+.select-wrapper input.select-dropdown {
+  color: green;
+  font-size: 20px;
+}
+
+div.center {
+  color: white;
+}
 
 .dropdown-content li>span{
   color: green;
 }
 
+form.edit-add {
+  margin: 0 200px;
+}
+
 @media screen and (min-width: 789px) {
-  
   a#textb{
     display: none;
   }
@@ -188,18 +224,29 @@ div.center {
     object-fit: cover; 
     max-height: 60vmax; 
     max-width: 60vmax;
+    border-radius: 10px;
   }
   a#textd{
     display: none;
   }
+  main.container {
+    margin: auto;
+    width: 100%;
+  }
+  form.edit-add {
+    margin: 0 50px;
+  }
 }
 
 @media screen and (max-width: 788px) {
-  img.posts{
-    height: 100%; 
-    object-fit: cover; 
-    max-height: 50vmax; 
-    max-width: 50vmax;
+  h1 {
+    margin: 20px 0;
+  }
+  img.posts {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
   }
   div.top-menu{
     display: none;
@@ -213,6 +260,13 @@ div.center {
   }
   main.container{
     padding-bottom: 120px;
+    width: 100%;
+  }
+  p#text {
+    margin: 0 20 0 20px;
+  }
+  form.edit-add {
+    margin: 0 20px;
   }
 }
 
@@ -223,6 +277,7 @@ a#textc {
   padding: 0 20px;
   text-decoration: none;
 }
+
 a#textc:hover{
   margin-left:0;
   background-color: darkgreen;
