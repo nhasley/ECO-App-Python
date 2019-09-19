@@ -6,7 +6,8 @@
 {% for post in posts %}
 <a href="{% url 'detail' post.id %}" class="post-box">
     <div class="card-content">
-        <img class="posts" src="{{post.photo}}" style="margin-top: 30px; margin-bottom: 10px; height: 100%; width: 100%; object-fit: cover; max-height: 60vmax; max-width: 60vmax;">
+      <img class="posts" src="{{post.photo}}" style="margin-top: 30px; margin-bottom: 10px; height: 100%; width: 100%; object-fit: cover; max-height: 60vmax; max-width: 60vmax;">
+      <p id="text">{{ post.user }}</p>
       <p id="text">{{ post.description }}</p>
     </div>
     <hr />

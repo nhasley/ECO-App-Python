@@ -173,7 +173,7 @@ nav {
 main {
   flex: 1 0 auto;
 }
-  
+
 footer.page-footer {
   margin-bottom: 0;
   padding-top: 0;
@@ -211,6 +211,14 @@ div.card{
 }
 
 @media screen and (min-width: 789px) {
+  p#text{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px;
+    margin-left: 100px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
   a#textb{
     display: none;
   }
