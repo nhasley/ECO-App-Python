@@ -3,16 +3,17 @@
 
 <h1>{{user.username}} Profile</h1>
 
-<div id="textc">Current Points: <span></span></div>
-
+{% if posts|length == 0 %}
+<div id="textc">Current Points: 0</div>
 <hr />
 <div id="textp">Recent Posts</div>
-
-{% if posts|length == 0 %}
 <div id="textp" class="card-panel center-align">No Photos Uploaded</div>
 {% else %}
 
 {% for post in posts %}
+<hr />
+<div id="textp">Recent Posts</div>
+<div id="textc">Current Points: <span></span></div>
 
 <a href="{% url 'detail' post.id %}" class="post-box">
     <div class="card-content">
