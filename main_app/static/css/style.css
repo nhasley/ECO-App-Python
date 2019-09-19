@@ -96,6 +96,7 @@ div.card-content:hover {
 }
 
 #texto {
+  margin: 0 10px;
   font-weight: 800;
   font-size: 17px;
   color: green;
@@ -150,6 +151,7 @@ div.card-content {
 }
 
 div.card-action {
+  margin: 0 10px 10px;
   text-align: center;
 }
 
@@ -206,14 +208,6 @@ div#textc{
 }
 
 @media screen and (min-width: 789px) {
-  p#text{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 100px;
-    margin-left: 100px;
-    margin-top: 0px;
-    padding-top: 0px;
-  }
   a#textb{
     display: none;
   }
@@ -272,9 +266,6 @@ div#textc{
   main.container{
     padding-bottom: 120px;
     width: 100%;
-  }
-  p#text {
-    margin: 0 20 0 20px;
   }
   form.edit-add {
     margin: 0 20px;
