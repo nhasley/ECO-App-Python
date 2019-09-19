@@ -52,6 +52,9 @@ class PostUpdate(UpdateView):
 class PostDelete(DeleteView):
     model = Post
     success_url = '/'
+    def form_valid(self, form):
+        form.instance.user = self.request.user 
+        return super().form_valid(form)
 
 def signup(request):
     error_message = ''
