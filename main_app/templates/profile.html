@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>My Profile</h1>
+<h1>{{user.username}} Profile</h1>
 
 <div id="textc">Current Points: <span></span></div>
 
@@ -11,6 +11,7 @@
 {% if posts|length == 0 %}
 <div id="textp" class="card-panel center-align">No Photos Uploaded</div>
 {% else %}
+{% if post.user == user.%}
 {% for post in posts %}
 <a href="{% url 'detail' post.id %}" class="post-box">
     <div class="card-content">
@@ -20,6 +21,7 @@
     <hr />
 </a>
 {% endfor %}
+{% endif %}
 {% endif %}
 
 <form action="{% url 'logout' %}" id="logout">
