@@ -3,7 +3,8 @@
 
 <h1>My Profile</h1>
 
-<div id="textc">Current Points:</div>
+<div id="textc">Current Points: <span></span></div>
+
 <hr />
 <div id="textp">Recent Posts</div>
 
@@ -24,4 +25,19 @@
 <form action="{% url 'logout' %}" id="logout">
     <button type='submit'>Log Out</button>
 </form>
+
+<script>
+        function imgCount() {
+            var imgs = document.getElementsByTagName('img');
+            var i=0;
+            for (var img in imgs){i++;}
+            return (i/2)*10;
+        };
+
+        var render = function (template, node) {
+            node.innerHTML = template;
+        };
+        render(imgCount(), document.querySelector('span'));
+</script>
+
 {% endblock %}
