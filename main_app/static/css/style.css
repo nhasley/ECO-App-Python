@@ -205,11 +205,6 @@ div#textc{
   margin: 20px;
 }
 
-div.card{
-  margin: 10px;
-  width: 400px;
-}
-
 @media screen and (min-width: 789px) {
   p#text{
     display: flex;

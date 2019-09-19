@@ -2,19 +2,19 @@
 {% block content %}
 
 <h1>{{user.username}} Profile</h1>
+<hr />
+<div id="textp">Recent Posts</div>
+<div id="textc">Current Points: 
 
 {% if posts|length == 0 %}
-<div id="textc">Current Points: 0</div>
+0</div>
 <hr />
 <div id="textp">Recent Posts</div>
 <div id="textp" class="card-panel center-align">No Photos Uploaded</div>
 {% else %}
 
 {% for post in posts %}
-<hr />
-<div id="textp">Recent Posts</div>
-<div id="textc">Current Points: <span></span></div>
-
+<span></span></div>
 <a href="{% url 'detail' post.id %}" class="post-box">
     <div class="card-content">
         <img class="posts" src="{{post.photo}}" style="margin-top: 30px; margin-bottom: 10px; height: 100%; width: 100%; object-fit: cover; max-height: 60vmax; max-width: 60vmax;">
