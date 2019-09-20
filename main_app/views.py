@@ -5,7 +5,12 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Post
 import uuid
 import boto3
-#comment
+from googleplaces import GooglePlaces, types, lang
+
+YOUR_API_KEY = 'AIzaSyD-GuHDc6HmxIMV3-AJsxuuPf63NdXqts0'
+
+google_places = GooglePlaces(YOUR_API_KEY)
+
 S3_BASE_URL = 'https://s3-us-west-1.amazonaws.com/'
 BUCKET = 'codebloodedkillers'
 
@@ -38,10 +43,14 @@ def posts_detail(request, post_id):
 
 class PostCreate(CreateView):
     model = Post
-    fields = ['photo', 'challenge', 'description']
+    fields = ['photo', 'challenge', 'description', 'location']
     success_url = '/'
     def form_valid(self, form):
         form.instance.user = self.request.user
+        query_result = google_places.text_search(query = form.instance.location)
+        print(query_result.places[0].geo_location)
+        form.instance.lat = query_result.places[0].geo_location.get('lat')
+        form.instance.lng = query_result.places[0].geo_location.get('lng')
         return super().form_valid(form)
 
 class PostUpdate(UpdateView):

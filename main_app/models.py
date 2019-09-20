@@ -19,4 +19,9 @@ class Post(models.Model):
         default=10
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    location = models.CharField(max_length=100)
+    lat = models.FloatField(null=True, blank=True, default=None)
+    lng = models.FloatField(null=True, blank=True, default=None)
+    
+
     

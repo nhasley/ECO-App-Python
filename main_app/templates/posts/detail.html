@@ -6,10 +6,15 @@
 <!-- <span class="card-title">{{ post.name }}</span> -->
 <img class="posts" src="{{post.photo}}"
   style="margin-top: 30px; margin-bottom: 10px; height: 100%; width: 100%; object-fit: cover; max-height: 60vmax; max-width: 60vmax;">
-<p id="textp">Chllenge: {{ post.challenge }}</p>
+<p id="textp">Challenge: {{ post.challenge }}</p>
 <p id="textp">Description: {{ post.description }}</p>
 <p id="textp">Points: {{ post.points }}</p>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+<p id="textp">Location: {{ post.location }}</p>
+<iframe width="600" height="450" frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-GuHDc6HmxIMV3-AJsxuuPf63NdXqts0&q={{post.lat}},{{post.lng}}"
+  allowfullscreen>
+</iframe>
+
 <div class="card-action">
   <a href="{% url 'posts_update' post.id %}" id="texto">Edit</a>
   <a href="{% url 'posts_delete' post.id %}" id="texto">Delete</a>
