@@ -202,10 +202,14 @@ form.edit-add {
 #flex {
   display: flex;
 }
-
-div#textc{
-  margin: 20px;
+button.redeem{
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
+
+/* div#textc{
+  margin: 20px;
+} */
 
 @media screen and (min-width: 789px) {
   a#textb{
