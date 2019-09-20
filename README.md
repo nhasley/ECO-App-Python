@@ -11,11 +11,11 @@ Welcome to Eco, your way to track eco conscious decisions while earning points t
 5. Github 
 6. CSS
 7. HTML
+8. Google Places 
 
 ### Stretch Goals 
-1. Google Maps API 
-2. Implementing an upvote system 
-3. Creating a comment section 
+1. Implementing an upvote system 
+2. Creating a comment section 
 
 
 [Trello](https://trello.com/b/qBpEXc36/project-3)
