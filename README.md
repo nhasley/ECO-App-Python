@@ -1,4 +1,4 @@
-#ECO 
+# ECO 
 Welcome to Eco, your way to track eco conscious decisions while earning points to redeem rewards. With this app you'll be able to post about how you choose to be ecologically and physically proactive
 
 --
