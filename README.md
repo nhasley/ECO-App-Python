@@ -22,7 +22,6 @@ Welcome to Eco, your way to track eco conscious decisions while earning points t
 
 [Wireframe](https://projects.invisionapp.com/prototype/ecoApp-ck0fgbr96004cs60127zfj3fq/play/c3a9e163)
 
-![](https://www.youtube.com/watch?v=fSDTGd1aUZI)
 [Youtube](https://www.youtube.com/watch?v=fSDTGd1aUZI)
 
 ![](https://i.imgur.com/3scpvoq.png)
