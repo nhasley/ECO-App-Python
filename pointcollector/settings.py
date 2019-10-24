@@ -25,7 +25,8 @@ SECRET_KEY = 'nw5rl@qy-#gwmasnpj@8zb#ea-bl2iw_u89c-uu#mnl73sq$dv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ecopython.herokuapp.com']
+# ALLOWED_HOSTS = ['ecopython.herokuapp.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition

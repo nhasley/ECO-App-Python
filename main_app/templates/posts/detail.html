@@ -6,10 +6,10 @@
 <!-- <span class="card-title">{{ post.name }}</span> -->
 <img class="posts" src="{{post.photo}}"
   style="margin-top: 30px; margin-bottom: 10px; height: 100%; width: 100%; object-fit: cover; max-height: 60vmax; max-width: 60vmax;">
-<p id="textp">Challenge: {{ post.challenge }}</p>
-<p id="textp">Description: {{ post.description }}</p>
-<p id="textp">Points: {{ post.points }}</p>
-<p id="textp">Location: {{ post.location }}</p>
+<p id="textp">Challenge: <span>{{ post.challenge }}</span></p>
+<p id="textp">Description: <span>{{ post.description }}</span></p>
+<p id="textp">Points: <span>{{ post.points }}</span></p>
+<p id="textp">Location: <span>{{ post.location }}</span></p>
 <iframe width="100%" height="450" frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-GuHDc6HmxIMV3-AJsxuuPf63NdXqts0&q={{post.lat}},{{post.lng}}"
   allowfullscreen>

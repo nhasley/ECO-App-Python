@@ -49,13 +49,13 @@
     {% if user.is_authenticated %}
     <ul class="center">
       <li><a href="{%url 'posts'%}" id="textb"><i class="fas fa-camera-retro"
-            style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Posts</a></li>
+            style="font-size:40px; color: rgba(255,255,255,.6); display: flex; justify-content: center;"></i> Posts</a></li>
       <li><a href="{%url 'challenges'%}" id="textb"><i class="fas fa-trophy"
-            style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Prizes</a></li>
+            style="font-size:40px; color: rgba(255,255,255,.6); display: flex; justify-content: center;"></i> Prizes</a></li>
       <li><a href="{% url 'posts_create' %}" id="textb"><i class="fas fa-plus"
-            style="font-size: 40px; color: white; display: flex; justify-content: center;"></i>Add</a></li>
+            style="font-size: 40px; color: rgba(255,255,255,.6); display: flex; justify-content: center;"></i>Add</a></li>
       <li><a href="{%url 'profile'%}" id="textb"><i class="glyphicon glyphicon-user"
-            style="font-size:40px; color: white; display: flex; justify-content: center;"></i> Profile</a></li>
+            style="font-size:40px; color: rgba(255,255,255,.6); display: flex; justify-content: center;"></i> Profile</a></li>
       {% else %}
       <div class="orig">
         <a href="{% url 'signup' %}" id="textd">Sign Up</a>

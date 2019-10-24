@@ -19,10 +19,10 @@
 {% for post in posts %}
 
 <a href="{% url 'detail' post.id %}" class="post-box">
-    <div class="card-content">
+    <div>
         <img class="posts" src="{{post.photo}}" style="margin-top: 30px; margin-bottom: 10px; height: 100%; width: 100%; object-fit: cover; max-height: 60vmax; max-width: 60vmax;">
         <p id="text">{{ post.user }}</p>
-        <p id="text">{{ post.description }}</p>
+        <span id="text">{{ post.description }}</span>
     </div>
     <hr />
 </a>
@@ -40,7 +40,7 @@
             var imgs = document.getElementsByTagName('img');
             var i=0;
             for (var img in imgs){i++;}
-            return (i/2)*10;
+            return (i-3)*10;
         };
 
         var render = function (template, node) {
